@@ -3,11 +3,12 @@ import { cuzbtn } from "~/data/customButton";
 const bluebtn = cuzbtn[0].bluebtn;
 const whitebtn = cuzbtn[1].whitebtn;
 
-const photoUrl = ref("https://img5.pic.in.th/file/secure-sv1/Z06_8096.jpeg");
+const photoUrl = ref("https://img2.pic.in.th/pic/Z06_8096_35_11zon.webp");
 </script>
 <template>
   <section
     :style="{ backgroundImage: `url(${photoUrl})` }"
+    loading="lazy"
     class="relative bg-cover bg-center bg-no-repeat"
   >
     <div

@@ -19,6 +19,7 @@
                   <Icon
                     class="hover:scale-125 lg:hover:scale-150 text-gray-500 hover:text-blue-800 duration-300 h-6 w-6 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
                     name="fa6-brands:square-facebook"
+                    aria-label="facebook"
                     >Facebook</Icon
                   >
                 </button>
@@ -26,6 +27,7 @@
                   <Icon
                     class="hover:scale-125 lg:hover:scale-150 text-gray-500 hover:text-red-600 duration-300 h-7 w-7 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
                     name="tabler:brand-youtube-filled"
+                    aria-label="youtube"
                     >Youtube</Icon
                   >
                 </button>
@@ -33,6 +35,7 @@
                   <Icon
                     class="hover:scale-125 lg:hover:scale-150 text-gray-500 hover:text-green-800 duration-300 h-7 w-7 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
                     name="tabler:mail-filled"
+                    aria-label="email"
                     >Email</Icon
                   >
                 </button>

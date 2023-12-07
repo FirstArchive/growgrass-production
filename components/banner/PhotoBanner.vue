@@ -3,7 +3,7 @@
 // const onChange = (current: number) => {
 //   console.log(current);
 // };
-import { imgUrl, topbannerimg } from "~/data/ImgFirstpageBanner";
+import { topbannerimg } from "~/data/ImgFirstpageBanner";
 </script>
 
 <template>
@@ -13,7 +13,6 @@ import { imgUrl, topbannerimg } from "~/data/ImgFirstpageBanner";
         alt="index banner"
         format="webp"
         quality="60"
-        loading="lazy"
         :src="detail"
         class="mx-auto w-full"
         lazy
