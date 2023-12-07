@@ -30,6 +30,12 @@ const menu = [
     icon: SquaresPlusIcon,
   },
   {
+    name: "คำนวณพื้นที่",
+    description: "Connect with third-party tools",
+    href: "/areacal",
+    icon: SquaresPlusIcon,
+  },
+  {
     name: "เกี่ยวกับเรา",
     description: "Your customers’ data will be safe and secure",
     href: "/aboutus",

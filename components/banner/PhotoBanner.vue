@@ -10,6 +10,7 @@ import { imgUrl, topbannerimg } from "~/data/ImgFirstpageBanner";
   <a-carousel effect="fade" autoplay>
     <div v-for="detail in topbannerimg" class="bg-slate-100">
       <NuxtImg
+        alt="index banner"
         format="webp"
         quality="60"
         loading="lazy"

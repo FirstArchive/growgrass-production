@@ -51,6 +51,7 @@ const bluebtn = cuzbtn[0].bluebtn;
             :description="card.description"
             :price="card.price"
             :photo="card.photo"
+            ribbon="สินค้าแนะนำ"
             class="rounded-2xl"
           />
         </div>

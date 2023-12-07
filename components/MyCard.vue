@@ -1,11 +1,10 @@
 <script setup>
-import { imgUrl } from "~/data/ImgFirstpageBanner";
-
 defineProps({
   title: String,
   description: String,
   price: Number,
   photo: String,
+  ribbon: String,
 });
 </script>
 
@@ -15,17 +14,23 @@ defineProps({
     class="md:w-72 h-fit mb-6 shadow-sm hover:shadow-lg font-sans"
   >
     <template #cover>
-      <NuxtImg
-        :alt="title"
-        format="webp"
-        quality="50"
-        loading="lazy"
-        height="300px"
-        width="300px"
-        alt="imgUrl"
-        :src="photo"
-        class="aspect-square object-cover"
-      />
+      <a-badge-ribbon
+        :text="ribbon"
+        color="red"
+        class="font-sans font-bold top-5 md:top-8 md:text-xl xl:text-lg xl:top-5 sm:p-1 sm:px-3 sm:text-base"
+      >
+        <NuxtImg
+          :alt="title"
+          format="webp"
+          quality="50"
+          loading="lazy"
+          height="300px"
+          width="300px"
+          alt="imgUrl"
+          :src="photo"
+          class="aspect-square object-cover"
+        />
+      </a-badge-ribbon>
       <div class="p-4 text-center sm:text-left">
         <h4
           :title="title"

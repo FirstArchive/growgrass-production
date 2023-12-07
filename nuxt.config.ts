@@ -10,6 +10,13 @@ export default defineNuxtConfig({
       },
       charset: "utf-8",
       titleTemplate: "%s | growgrassth",
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "https://scontent.fbkk30-1.fna.fbcdn.net/v/t39.30808-6/358427765_313343501028422_2674244689172395098_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEb9QIcUww5VbBkth-sZz65t9_K1CxH1t6338rULEfW3vaRqrKjE7nkn7d0DNVVFtnVtgFXQdHex2j9XWKL4E_4&_nc_ohc=6VG3vnL_8vcAX-Hry_V&_nc_ht=scontent.fbkk30-1.fna&oh=00_AfBUFiR-XclpjIWUuZArarr3GSUKoXUGw-SanWZrmEk-pg&oe=657739C0",
+        },
+      ],
       meta: [
         {
           name: "author",

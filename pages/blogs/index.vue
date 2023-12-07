@@ -39,6 +39,7 @@ useHead({
         >
           <div class="flex mx-auto aspect-video w-full object-cover mb-4">
             <NuxtImg
+              :alt="post.description"
               format="webp"
               quality="50"
               loading="lazy"
@@ -69,13 +70,14 @@ useHead({
               {{ post.description }}
             </p>
           </div>
+
           <div class="relative mt-8 flex items-center gap-x-4">
             <NuxtImg
               format="webp"
               quality="50"
               loading="lazy"
               :src="post.author.imageUrl"
-              alt="post"
+              :alt="post.description"
               class="h-10 w-10 rounded-full bg-gray-50"
             />
             <div class="text-sm leading-6">

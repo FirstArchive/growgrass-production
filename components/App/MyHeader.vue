@@ -18,7 +18,7 @@
         </NuxtLink>
       </div>
       <!-- @todo main menu -->
-      <div class="hidden lg:flex md:mr-32 lg:mr-0 md:gap-x-5">
+      <div class="hidden lg:flex md:mr-32 lg:mr-0 md:gap-x-0">
         <ul v-for="list in menu">
           <NuxtLink
             class="font-bold text-xl flex ml-6 hidden md:flex hover:text-blue-700 hover:scale-105 duration-500"
@@ -35,13 +35,11 @@
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 translate-y-1"
       >
-        <PopoverGroup
-          class="hidden lg:flex lg:gap-x-12 ml-11 lg:ml-11 xl:ml-11"
-        >
+        <PopoverGroup class="hidden lg:flex lg:gap-x-12 ml-11 lg:ml-6">
           <Popover class="relative">
             <PopoverButton
               :class="myhover"
-              class="mr-4 font-bold text-xl flex items-center gap-x-1 leading-6"
+              class="font-bold text-xl flex items-center gap-x-1 leading-6"
             >
               ดูสินค้า
               <ChevronDownIcon

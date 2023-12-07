@@ -21,6 +21,7 @@
         >
           <div class="inline-block mb-4 rounded-full">
             <NuxtImg
+              :alt="person.comment"
               format="webp"
               quality="50"
               loading="lazy"
