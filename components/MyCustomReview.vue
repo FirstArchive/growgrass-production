@@ -22,7 +22,7 @@
           <div class="inline-block mb-4 rounded-full">
             <NuxtImg
               format="webp"
-              quality="70"
+              quality="50"
               loading="lazy"
               class="object-cover w-20 h-20 mr-4 rounded-full shadow"
               :src="person.avatar"

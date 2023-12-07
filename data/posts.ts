@@ -9,13 +9,12 @@ export const posts = [
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
 
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img2.pic.in.th/pic/Z06_7960_2_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   {
@@ -27,13 +26,12 @@ export const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img2.pic.in.th/pic/Z06_8096_35_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   {
@@ -45,13 +43,12 @@ export const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img2.pic.in.th/pic/Z06_8110_40_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   {
@@ -63,13 +60,12 @@ export const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img5.pic.in.th/file/secure-sv1/Z06_8122_43_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   {
@@ -81,13 +77,12 @@ export const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img5.pic.in.th/file/secure-sv1/Z06_8064_31_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   {
@@ -99,13 +94,12 @@ export const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img2.pic.in.th/pic/Z06_7952_1_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   {
@@ -117,13 +111,12 @@ export const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },
-    postImg: "https://img2.pic.in.th/pic/Z06_7979.md.jpeg",
+    postImg: "https://img2.pic.in.th/pic/Z06_8056_27_11zon.md.webp",
     author: {
       name: "Michael Foster",
       role: "Co-Founder / CTO",
       href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=formatTempor magna quis adipisicing dolore qui.&fit=faceareaLaboris enim pariatur sit dolor velit tempor sit ea nulla duis adipisicing. Culpa ullamco laborum magna ad. Cillum pariatur aliquip sunt laborum laboris adipisicing dolore consectetur cillum. Elit officia sit irure ex nulla Lorem esse. Ad Lorem dolore in incididunt dolor labore elit anim. Dolor dolore enim consequat deserunt aliqua commodo ad.&facepad=2&w=256&h=256&q=80",
+      imageUrl: "https://img2.pic.in.th/pic/beer.th.jpeg",
     },
   },
   // More posts...

@@ -4,7 +4,7 @@ import { cuzbtn } from "~/data/customButton";
 
 const bluebtn = cuzbtn[0].bluebtn;
 
-const card = ref(4);
+const current = ref(2);
 
 useHead({
   title: "Blogs",
@@ -22,31 +22,25 @@ useHead({
 </script>
 
 <template>
-  <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        รวมบทความ
-      </h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม
-      </p>
-    </div>
-  </div>
+  <MyPageTitle
+    pagetitle="รวมบทความ"
+    pagedescription="วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม"
+  />
 
   <div class="mx-auto max-w-7xl p-6 lg:px-8">
     <div class="bg-whitebg-green-300 rounded-lg">
       <div
-        class="mx-auto justify-items-center grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        class="mx-auto justify-items-center grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
       >
         <article
           v-for="post in posts"
           :key="post.id"
-          class="flex max-w-xl flex-col items-start justify-between duration-200 border-slate-100 border shadow-sm hover:shadow-md rounded-2xl p-5"
+          class="flex max-w-xl flex-col items-start justify-between duration-200 border-slate-100 border shadow-sm hover:shadow-md rounded-2xl p-5 xl:p-7"
         >
           <div class="flex mx-auto aspect-video w-full object-cover mb-4">
             <NuxtImg
               format="webp"
-              quality="70"
+              quality="50"
               loading="lazy"
               :src="post.postImg"
               class="w-full rounded-lg"
@@ -78,7 +72,7 @@ useHead({
           <div class="relative mt-8 flex items-center gap-x-4">
             <NuxtImg
               format="webp"
-              quality="70"
+              quality="50"
               loading="lazy"
               :src="post.author.imageUrl"
               alt="post"
@@ -96,6 +90,14 @@ useHead({
           </div>
         </article>
       </div>
+    </div>
+    <div class="flex justify-center mt-10">
+      <a-pagination
+        v-model:current="current"
+        :total="30"
+        show-less-items
+        class="md:scale-125"
+      />
     </div>
   </div>
 </template>

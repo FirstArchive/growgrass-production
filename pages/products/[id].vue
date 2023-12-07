@@ -15,14 +15,28 @@ useHead({
 
 const route = useRoute();
 const path = route.params.id;
-console.log(path);
 </script>
 
 <template>
-  <div class="flex my-4 justify-center">
-    <div class="inline-flex gap-3">
-      <p>หมวดหมู่ :</p>
-      <a-tag color="red">{{ $route.params.id }}</a-tag>
+  <MyPageTitle pagetitle="หมวดหมู่" :pageroute="path" />
+  <div class="mx-auto max-w-7xl px-6 py-8 sm:py-10 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea
+      aspernatur expedita sint rerum nam, dicta, eligendi voluptatem voluptate
+      officia quae. Delectus totam quas praesentium numquam doloribus quod
+      nesciunt culpa deleniti omnis repellendus eos nam, expedita officia saepe
+      atque quidem blanditiis? Provident quam excepturi, voluptas ipsum eligendi
+      magni voluptate sint.
+    </div>
+  </div>
+  <div class="mx-auto max-w-7xl px-6 py-8 sm:py-10 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea
+      aspernatur expedita sint rerum nam, dicta, eligendi voluptatem voluptate
+      officia quae. Delectus totam quas praesentium numquam doloribus quod
+      nesciunt culpa deleniti omnis repellendus eos nam, expedita officia saepe
+      atque quidem blanditiis? Provident quam excepturi, voluptas ipsum eligendi
+      magni voluptate sint.
     </div>
   </div>
 </template>

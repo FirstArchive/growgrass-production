@@ -3,15 +3,15 @@
 // const onChange = (current: number) => {
 //   console.log(current);
 // };
-import { imgUrl } from "~/data/ImgFirstpageBanner";
+import { imgUrl, topbannerimg } from "~/data/ImgFirstpageBanner";
 </script>
 
 <template>
   <a-carousel effect="fade" autoplay>
-    <div v-for="detail in imgUrl" class="bg-slate-100">
+    <div v-for="detail in topbannerimg" class="bg-slate-100">
       <NuxtImg
         format="webp"
-        quality="70"
+        quality="60"
         loading="lazy"
         :src="detail"
         class="mx-auto w-full"
@@ -24,7 +24,7 @@ import { imgUrl } from "~/data/ImgFirstpageBanner";
 <style scoped>
 :deep(.slick-slide) {
   text-align: center;
-  height: 45vw; /* Set a responsive height using viewport width */
+  height: fit-content; /* Set a responsive height using viewport width */
   overflow: hidden;
   display: flex;
   justify-content: center;

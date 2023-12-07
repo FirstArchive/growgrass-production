@@ -2,37 +2,42 @@
   <footer class="relative bg-blueGray-200 mt-8 lg:pt-14 bottom-0">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-left lg:text-left">
-        <div class="w-full lg:w-6/12 px-4 mb-10">
-          <h4 class="text-2xl font-medium text-blueGray-700">
-            ช่องทางการติดต่อ
-          </h4>
-          <h5 class="text-md mt-0 mb-2 text-blueGray-600">
-            สามารถติดต่อเราได้ที่ :<br />42, หญ้าเทียมGrowGrass บ้านปึก, ถนน
-            มิตรสัมพันธ์ อำเภอเมืองชลบุรี ชลบุรี
-          </h5>
-          <div class="mt-6 lg:mb-0 mb-6 space-x-3 md:space-x-9">
-            <button>
-              <!-- bg-white text-lightBlue-400 shadow-lg font-normal  กรอบขาว-->
-              <Icon
-                class="text-gray-500 hover:text-blue-800 duration-200 h-6 w-6 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
-                name="fa6-brands:square-facebook"
-                >Facebook</Icon
-              >
-            </button>
-            <button>
-              <Icon
-                class="text-gray-500 hover:text-red-600 duration-200 h-7 w-7 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
-                name="tabler:brand-youtube-filled"
-                >Youtube</Icon
-              >
-            </button>
-            <button>
-              <Icon
-                class="text-gray-500 hover:text-green-800 duration-200 h-7 w-7 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
-                name="tabler:mail-filled"
-                >Email</Icon
-              >
-            </button>
+        <div class="w-full lg:w-6/12 px-4 mb-7">
+          <div class="w-full px-4">
+            <h4 class="text-2xl font-bold text-blueGray-700">
+              ช่องทางการติดต่อ
+            </h4>
+            <h5 class="text-md mt-0 mb-2 text-blueGray-600">
+              สามารถติดต่อเราได้ที่ :<br />42, หญ้าเทียมGrowGrass บ้านปึก, ถนน
+              มิตรสัมพันธ์ อำเภอเมืองชลบุรี ชลบุรี
+            </h5>
+
+            <div class="mt-6 lg:mb-0 mb-6 space-x-3 md:space-x-9">
+              <div class="flex gap-5 lg:gap-7">
+                <button>
+                  <!-- bg-white text-lightBlue-400 shadow-lg font-normal  กรอบขาว-->
+                  <Icon
+                    class="hover:scale-125 lg:hover:scale-150 text-gray-500 hover:text-blue-800 duration-300 h-6 w-6 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
+                    name="fa6-brands:square-facebook"
+                    >Facebook</Icon
+                  >
+                </button>
+                <button>
+                  <Icon
+                    class="hover:scale-125 lg:hover:scale-150 text-gray-500 hover:text-red-600 duration-300 h-7 w-7 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
+                    name="tabler:brand-youtube-filled"
+                    >Youtube</Icon
+                  >
+                </button>
+                <button>
+                  <Icon
+                    class="hover:scale-125 lg:hover:scale-150 text-gray-500 hover:text-green-800 duration-300 h-7 w-7 lg:scale-125 items-center justify-center align-center rounded-jg outline-none focus:outline-none mr-2"
+                    name="tabler:mail-filled"
+                    >Email</Icon
+                  >
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="w-full lg:w-6/12 px-4 lg:pb-10">

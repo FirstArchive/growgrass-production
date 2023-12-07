@@ -33,9 +33,17 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "@formkit/auto-animate/nuxt",
+    "@nuxt/image",
     "nuxt-icon",
     "@vueuse/nuxt",
     "@ant-design-vue/nuxt",
+    [
+      "nuxt-gtag",
+      {
+        id: "G-9VT42LB6FR",
+      },
+    ],
     [
       "@nuxtjs/strapi",
       {
@@ -54,6 +62,5 @@ export default defineNuxtConfig({
         Disallow: "",
       },
     ],
-    "@nuxt/image",
   ],
 });

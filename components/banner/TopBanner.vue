@@ -58,41 +58,49 @@
       />
     </div>
     <div
-      class="flex items-start sm:items-center px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
+      class="lg:ml-10 flex items-start sm:items-center pl-6 py-2.5 sm:pl-3.5 sm:before:flex-1"
     >
       <div
-        class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:w-10/12 lg:w-4/5"
+        class="flex flex-wrap items-center justify-center gap-x-4 md:w-10/12 lg:w-4/5"
       >
         <div class="text-gray-900">
-          <strong class="font-semibold text-2xl"
-            >โปรโมชั่นส่งท้ายปี 2023</strong
-          >
+          <strong class="font-semibold text-2xl inline-flex"
+            >โปรโมชั่นส่งท้ายปี
+            <count-up
+              :start-val="2000"
+              :end-val="2023"
+              duration="8"
+              class="ml-1 sm:ml-2"
+            />
+          </strong>
         </div>
         <!-- <span class="inline h-0.5 w-0.5 text-center" aria-hidden="true"></span> -->
         <div>
-          <div class="tracking-wide text-md font-medium">
-            งานติดตั้งรับประกันเพิ่มฟรี 3ปี
-          </div>
-          <div class="text-sm">
-            เหลืออีก
-            <a-tag color="warning" class="font-sans text-red-600 ml-1"
-              >{{ days }}วัน</a-tag
-            >
-            <a-tag color="warning" class="font-sans text-red-600"
-              >{{ hours }}ชั่วโมง</a-tag
-            >
-            <a-tag color="warning" class="font-sans text-red-600"
-              >{{ minutes }}นาที
-            </a-tag>
-            <a-tag color="warning" class="font-sans text-red-600"
-              >{{ seconds }}วินาที
-            </a-tag>
+          <div class="flex flex-col">
+            <div class="tracking-wide text-lg font-medium inline-flex">
+              งานติดตั้งรับประกันเพิ่มฟรี&nbsp;
+              <count-up :start-val="0" :end-val="3" duration="7" />&nbsp;ปี
+            </div>
+            <div class="text-sm">
+              <a-tag color="warning" class="font-sans text-red-600 ml-1"
+                >{{ days }}วัน</a-tag
+              >
+              <a-tag color="warning" class="font-sans text-red-600"
+                >{{ hours }}ชั่วโมง</a-tag
+              >
+              <a-tag color="warning" class="font-sans text-red-600"
+                >{{ minutes }}นาที
+              </a-tag>
+              <a-tag color="warning" class="font-sans text-red-600"
+                >{{ seconds }}วินาที
+              </a-tag>
+            </div>
           </div>
         </div>
         <NuxtLink
           to="#"
           :class="seepromobtn"
-          class="duration-300 ml-1 mt-3 sm:mt-0 animate-pulse lg:mx-10 flex-none rounded-lg bg-gray-900 px-5 py-1.5 text-sm font-semibold text-white hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          class="duration-300 ml-1 mt-3 lg:mt-0 animate-pulse lg:mx-10 flex-none rounded-lg bg-gray-900 px-5 py-1.5 text-sm font-semibold text-white hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >ดูรายละเอียด <span aria-hidden="true">&rarr;</span></NuxtLink
         >
       </div>
@@ -115,6 +123,7 @@ import { useToggle } from "@vueuse/core";
 import { ref } from "vue";
 import { XMarkIcon } from "@heroicons/vue/20/solid";
 import { seepromobtn } from "~/data/customButton";
+import CountUp from "vue-countup-v3";
 
 const showBanner = ref(true);
 const closeBanner = useToggle(showBanner);

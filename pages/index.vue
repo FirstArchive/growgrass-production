@@ -28,19 +28,13 @@ const bluebtn = cuzbtn[0].bluebtn;
 </script>
 
 <template>
-  <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        หน้าแรก
-      </h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม
-      </p>
-    </div>
-  </div>
+  <MyPageTitle
+    pagetitle="หน้าแรก"
+    pagedescription="วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม"
+  />
   <bannerPhotoBanner />
   <div
-    class="mx-auto lg:w-11/12 xl:w-full xl:px-36 px-6 mt-10 sm:mt-14 sm:px-16"
+    class="mx-auto lg:w-11/12 xl:w-full xl:px-36 px-5 mt-10 sm:mt-14 sm:px-16"
   >
     <div class="px-0">
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -49,7 +43,7 @@ const bluebtn = cuzbtn[0].bluebtn;
       <hr class="my-4 sm:my-6" />
       <!-- @audit FIX -->
       <div
-        class="grid grid-cols-2 md::grid-cols-3 xl:grid-cols-4 gap-x-5 sm:gap-x-12 sm:gap-y-5 xl:gap-7 justify-items-center"
+        class="grid grid-cols-2 md::grid-cols-3 xl:grid-cols-4 gap-x-5 sm:gap-x-10 justify-items-center"
       >
         <div v-for="card in details">
           <MyCard
@@ -57,12 +51,13 @@ const bluebtn = cuzbtn[0].bluebtn;
             :description="card.description"
             :price="card.price"
             :photo="card.photo"
+            class="rounded-2xl"
           />
         </div>
       </div>
       <!--  -->
     </div>
-    <div class="flex my-10 justify-center">
+    <div class="flex mb-10 mt-3 md:my-10 justify-center">
       <!-- class="block w-full rounded-lg bg-blue-600 px-12 py-3 font-bold text-white shadow hover:bg-blue-700 duration-200 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" -->
       <button :class="bluebtn">
         ดูทั้งหมด

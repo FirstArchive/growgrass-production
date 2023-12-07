@@ -15,16 +15,11 @@ useHead({
 </script>
 
 <template>
-  <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        ติดต่อเรา
-      </h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม
-      </p>
-    </div>
-  </div>
+  <MyPageTitle
+    pagetitle="ติดต่อเรา"
+    pagedescription="วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม"
+  />
+
   <!-- <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8"> -->
   <section class="flex items-center xl:h-fit">
     <div

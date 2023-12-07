@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl px-6 py-6 lg:px-8">
+  <div class="mx-auto max-w-7xl px-2 pt-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <NuxtLink to="#" @click="handleBack" class="text-md font-medium"
         ><Icon

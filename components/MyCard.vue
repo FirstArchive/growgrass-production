@@ -1,6 +1,5 @@
 <script setup>
 import { imgUrl } from "~/data/ImgFirstpageBanner";
-import { cuzbtn } from "~/data/customButton";
 
 defineProps({
   title: String,
@@ -13,30 +12,43 @@ defineProps({
 <template>
   <a-card
     hoverable
-    class="w-44 sm:w-full h-fit mb-6 shadow-sm hover:shadow-lg font-sans"
+    class="md:w-72 h-fit mb-6 shadow-sm hover:shadow-lg font-sans"
   >
-    <template #cover v-for="item in imgUrl">
+    <template #cover>
       <NuxtImg
+        :alt="title"
         format="webp"
-        quality="70"
+        quality="50"
         loading="lazy"
-        height="500px"
-        width="500px"
+        height="300px"
+        width="300px"
         alt="imgUrl"
         :src="photo"
-        class="aspect-video object-cover"
+        class="aspect-square object-cover"
       />
       <div class="p-4 text-center sm:text-left">
-        <a-card-meta :title="title">
-          <template #description>growgrassth.com</template>
-        </a-card-meta>
-        <p class="my-2 sm:my-4 text-sm leading-tight">{{ description }}</p>
-        <div
-          class="flex-col sm:flex sm:flex-row justify-between items-center lg:w-3/4 xl:w-full mx-auto"
+        <h4
+          :title="title"
+          class="font-bold text-base text-left sm:text-2xl m-0"
         >
-          <p class="font-semibold sm:text-right">ราคา {{ price }} บาท</p>
+          {{ title }}
+        </h4>
+        <!-- <a-card-meta :title="title">
+          <template #description>growgrassth.com</template>
+        </a-card-meta> -->
+        <p class="my-1 sm:my-3 text-sm leading-tight text-left line-clamp-2">
+          {{ description }}
+        </p>
+        <div
+          class="flex-col sm:flex sm:flex-row justify-between items-center mx-auto"
+        >
+          <p
+            class="my-2 text-left font-semibold text-sm sm:text-right lg:text-xl"
+          >
+            ราคา {{ price }} บาท
+          </p>
           <button
-            class="bg-gray-600 px-4 py-1 font-bold text-white rounded-lg scale-90 text-xs sm:text-sm"
+            class="text-xs bg-gray-600 px-4 py-1 font-bold text-white rounded-md lg:text-base"
           >
             ดูเพิ่มเติม
           </button>

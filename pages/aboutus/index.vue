@@ -25,34 +25,28 @@ const detail = [
     Num: 3590,
     backText: "ตรม",
     Text: "ตารางเมตร",
-    Icon: "bi:people-fill",
+    Icon: "material-symbols:square-foot",
   },
   {
     Num: 74,
     backText: "รีวิว",
     Text: "คนที่รีวิว",
-    Icon: "bi:people-fill",
+    Icon: "material-symbols:kid-star",
   },
   {
     Num: 15,
     backText: "ปี",
     Text: "และเราจะก้าวต่อไป",
-    Icon: "bi:people-fill",
+    Icon: "ri:service-fill",
   },
 ];
 </script>
 
 <template>
-  <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        เกี่ยวกับเรา
-      </h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม
-      </p>
-    </div>
-  </div>
+  <MyPageTitle
+    pagetitle="เกี่ยวกับเรา"
+    pagedescription="วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม"
+  />
 
   <section class="lg:py-7 font-poppins">
     <div class="max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
@@ -86,15 +80,15 @@ const detail = [
                     >
                       <Icon
                         :name="item.Icon"
-                        class="md:mr-2 mr-4 text-gray-700 text-3xl"
+                        class="mr-2 md:mr-1 text-gray-700 text-3xl"
                       />
                       <p
-                        class="mt-4 mb-2 text-5xl lg:text-3xl font-bold text-gray-700"
+                        class="mt-4 mb-2 text-4xl lg:text-3xl font-bold text-gray-700"
                       >
                         <count-up :end-val="item.Num" duration="4"></count-up>
                       </p>
                       <p
-                        class="md:ml-1 ml-4 mt-2 text-center text-2xl lg:text-lg font-bold text-gray-700"
+                        class="ml-2 md:ml-2 xl:ml-1 mt-2 text-center text-2xl lg:text-lg font-bold text-gray-700"
                       >
                         {{ item.backText }}
                       </p>
@@ -112,9 +106,9 @@ const detail = [
         <div class="w-full px-4 lg:w-1/2 lg:mb-0">
           <NuxtImg
             format="webp"
-            quality="70"
+            quality="50"
             loading="lazy"
-            src="https://img2.pic.in.th/pic/Z06_7979.jpeg"
+            src="https://img5.pic.in.th/file/secure-sv1/Z06_8100_36_11zon.md.webp"
             alt="ฝากรูป"
             class="relative z-40 object-cover w-full h-full rounded-lg"
           />
