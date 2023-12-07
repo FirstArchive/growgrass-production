@@ -41,10 +41,11 @@ useHead({
             <NuxtImg
               :alt="post.description"
               format="webp"
-              quality="50"
-              loading="lazy"
+              height="250"
+              width="250"
               :src="post.postImg"
               class="w-full rounded-lg"
+              quality="50"
             />
           </div>
           <div class="flex items-center gap-x-4 text-xs">

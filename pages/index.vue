@@ -13,10 +13,10 @@ useHead({
   ],
 });
 useSeoMeta({
-  title: "Home | growgrassth",
-  ogTitle: "Home ogTitle | หญ้าเทียม growgrassth",
-  description: "Home description | หญ้าเทียม, growgrassth",
-  ogDescription: "Home description | หญ้าเทียม, growgrassth",
+  title: "Home",
+  ogTitle: "Home | หญ้าเทียม growgrassth",
+  description: "Home | หญ้าเทียม, growgrassth",
+  ogDescription: "Home | หญ้าเทียม, growgrassth",
   ogImage: "https://img5.pic.in.th/file/secure-sv1/Z06_8096.md.jpeg",
   twitterCard: "summary_large_image",
 });
