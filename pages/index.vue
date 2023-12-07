@@ -14,10 +14,12 @@ useHead({
 });
 useSeoMeta({
   title: "Home",
-  ogTitle: "Home | หญ้าเทียม growgrassth",
-  description: "Home | หญ้าเทียม, growgrassth",
-  ogDescription: "Home | หญ้าเทียม, growgrassth",
-  ogImage: "https://img5.pic.in.th/file/secure-sv1/Z06_8096.md.jpeg",
+  ogTitle: "หญ้าเทียม GrowGrassTH | ผู้นำด้านหญ้าเทียมคุณภาพสูง",
+  description:
+    "หญ้าเทียม GrowGrassTH ผู้นำด้านหญ้าเทียมคุณภาพสูง ให้บริการออกแบบ ติดตั้ง และจำหน่ายหญ้าเทียมทุกประเภท รับประกันคุณภาพ 10 ปี",
+  ogDescription:
+    "หญ้าเทียม GrowGrassTH ผู้นำด้านหญ้าเทียมคุณภาพสูง ให้บริการออกแบบ ติดตั้ง และจำหน่ายหญ้าเทียมทุกประเภท รับประกันคุณภาพ 10 ปี",
+  ogImage: "https://img5.pic.in.th/file/secure-sv1/promo1.md.webp",
   twitterCard: "summary_large_image",
 });
 
