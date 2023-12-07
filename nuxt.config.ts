@@ -33,7 +33,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "@formkit/auto-animate/nuxt",
     "@nuxt/image",
     "nuxt-icon",
     "@vueuse/nuxt",
