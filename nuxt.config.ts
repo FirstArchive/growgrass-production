@@ -31,6 +31,9 @@ export default defineNuxtConfig({
   },
 
   ssr: true,
+  routeRules: {
+    "/backend/**": { ssr: false },
+  },
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   postcss: {
@@ -53,8 +56,8 @@ export default defineNuxtConfig({
     [
       "@nuxtjs/strapi",
       {
-        url: process.env.STRAPI_URL || "http://localhost:1337",
-        prefix: "/api",
+        url: process.env.STRAPI_URL || "http://localhost:1337/api",
+        prefix: "/",
         admin: "/admin",
         version: "v4",
         cookie: {},

@@ -87,7 +87,7 @@
                   v-for="item in callsToAction"
                   :key="item.name"
                   :to="item.href"
-                  target="_blank"
+                  targetProp="_blank"
                   class="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                 >
                   <component

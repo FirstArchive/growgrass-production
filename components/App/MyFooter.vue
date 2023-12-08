@@ -77,7 +77,7 @@
                     :class="myhover"
                     class="ml-1 inline-flex text-gray-800 myhover font-medium block pb-2 text-md"
                     :to="contact.link"
-                    target="_blank"
+                    targetProp="_blank"
                     ><Icon
                       :name="contact.icon"
                       class="mr-2 text-xl text-blue-700"
@@ -99,7 +99,7 @@
             <NuxtLink
               to="https://www.facebook.com/growgrassth"
               class="text-blueGray-300 duration-200 hover:text-gray-800"
-              target="_blank"
+              targetProp="_blank"
             >
               growgrassth.co.th</NuxtLink
             >

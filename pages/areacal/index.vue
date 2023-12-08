@@ -19,7 +19,7 @@ const valueA = ref<number>(0);
 const valueB = ref<number>(0);
 const valuetext = ref<string[]>([]);
 
-console.log(valuetext.value);
+// console.log(valuetext.value);
 </script>
 
 <template>

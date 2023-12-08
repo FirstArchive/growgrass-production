@@ -8,7 +8,7 @@ import { contacts } from "~/data/menu";
       tooltip="สอบถาม"
       class="bg-white font-sans font-bold"
       :href="contacts[2].link"
-      target="_blank"
+      targetProp="_blank"
     >
       <template #icon>
         <Icon

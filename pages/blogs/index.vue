@@ -1,10 +1,40 @@
 <script setup lang="ts">
 import { posts } from "~/data/posts";
-import { cuzbtn } from "~/data/customButton";
-
-const bluebtn = cuzbtn[0].bluebtn;
 
 const current = ref(2);
+
+const route = useRoute();
+const { findOne, find } = useStrapi();
+const response = await find("blogs?populate=*");
+// const responseOne = await findOne("blogs", "6");
+// response.data.forEach((item) => {
+//   const title = item.attributes.thumbnail.data.attributes.formats.thumbnail.url; // ทำอะไรกับ title ต่อไป
+//   return title;
+// });
+
+// const fetchBlog = async () => {
+//   // เพิ่ม async ที่ function นี้
+//   try {
+//     const response = await find("blogs");
+//     const responseOne = await findOne("blogs", "6");
+
+//     if (response !== undefined && responseOne !== undefined) {
+//       const title: string = response.data[2].attributes.title;
+//       const titleOne = responseOne.data.attributes;
+//       console.log(title, titleOne);
+
+//       // console.log(
+//       //   `titleคือ : ${title} บทเดียวคือ : ${responseOne.data.attributes.updatedAt}`
+//       // );
+//     } else {
+//       console.error("Response is undefined"); // แก้ log จาก console.log เป็น console.error
+//     }
+//   } catch (error) {
+//     console.error(error); // เพิ่ม catch block เพื่อจัดการ error
+//   }
+// };
+
+// fetchBlog();
 
 useHead({
   title: "Blogs",
@@ -26,9 +56,20 @@ useHead({
     pagetitle="รวมบทความ"
     pagedescription="วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม"
   />
-
+  <!-- <div v-for="img in response.data">
+    <img
+      :src="img.attributes.thumbnail.data.attributes.formats.thumbnail.url"
+      alt=""
+    />
+  </div> -->
+  <!-- <div>
+    <ul v-for="post in response.data">
+      <li>{{ post.attributes.title }}</li>
+    </ul>
+  </div> -->
+  <!-- @todo Test fetch -->
   <div class="mx-auto max-w-7xl p-6 lg:px-8">
-    <div class="bg-whitebg-green-300 rounded-lg">
+    <div class="bg-white rounded-lg">
       <div
         class="mx-auto justify-items-center grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
       >
@@ -62,7 +103,7 @@ useHead({
             <h3
               class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
             >
-              <NuxtLink to="post.href">
+              <NuxtLink :to="post.href">
                 <span class="absolute inset-0" />
                 {{ post.title }}
               </NuxtLink>

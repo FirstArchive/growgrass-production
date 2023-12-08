@@ -1,24 +1,55 @@
-<script lang="ts" setup>
-import { reactive } from "vue";
+<script setup lang="ts">
 import { UserOutlined, LockOutlined } from "@ant-design/icons-vue";
-import type { UnwrapRef } from "vue";
 import type { FormProps } from "ant-design-vue";
 
-interface FormState {
-  user: string;
-  password: string;
-  remember: boolean;
-}
-const formState: UnwrapRef<FormState> = reactive({
-  user: "",
-  password: "",
-  remember: true,
+const formState = reactive({
+  user: {
+    email: "",
+    password: "",
+    remember: true,
+  },
 });
-const handleFinish: FormProps["onFinish"] = (values) => {
-  console.log(values, formState.password);
+
+const validateMessages = {
+  required: "Email is required!",
+  types: {
+    email: "Email is not a valid email!",
+    number: "Email is not a valid number!",
+  },
+  number: {
+    range: "${name} must be between ${min} and ${max}",
+  },
 };
-const handleFinishFailed: FormProps["onFinishFailed"] = (errors) => {
-  console.log(errors);
+
+const { login } = useStrapiAuth();
+const router = useRouter();
+const user = useStrapiUser(); //ได้ user
+// const token = useStrapiToken(); //auto Cookie
+
+const handleFinish: FormProps["onFinish"] = async (values: any) => {
+  const { email, password } = formState.user;
+  try {
+    await login({ identifier: email, password: password });
+    const userCookie = JSON.stringify(user.value?.email); // เข้าถึงค่า user ที่ได้จาก useStrapiUser
+    console.log(userCookie);
+    // alert(`ยินดีต้อนรับคุณ ,  กำลังพาคุณไปหน้า Dashboard *Loading...*`);
+    // setTimeout(async () => {
+    //   await router.push({ path: "/backend/dashboard" });
+    // }, 2000);
+
+    // const jwt = useCookie("strapi_jwt");
+    // console.log(jwt._rawValue);
+    router.push({ path: "/backend/dashboard" });
+  } catch (e: any) {
+    alert(
+      `error : ${e.error.status} ${e.error.name}`
+      // กรุณาตรวจสอบ Email : ${email} และ Password : ${password}
+    );
+  }
+};
+
+const handleFinishFailed: FormProps["onFinishFailed"] = (errors: any) => {
+  alert(errors.errorFields);
 };
 </script>
 
@@ -28,7 +59,6 @@ const handleFinishFailed: FormProps["onFinishFailed"] = (errors) => {
     pagedescription="วิธีการติดตั้ง และ ข่าวสารหญ้าเทียม"
   />
 
-  <!-- แบ่งส่วน -->
   <section class="font-poppins">
     <div
       class="relative z-10 lg:flex items-center h-fit pb-12 lg:py-24 overflow-hidden"
@@ -43,61 +73,61 @@ const handleFinishFailed: FormProps["onFinishFailed"] = (errors) => {
                 </h2>
                 <div>
                   <a-form
+                    autocomplete="off"
                     layout="inline"
                     v-model:model="formState"
                     @finish="handleFinish"
                     @finishFailed="handleFinishFailed"
                     class="flex flex-col gap-5"
+                    :validate-messages="validateMessages"
                   >
-                    <!-- @todo Start form -->
-                    <a-form-item>
+                    <!-- label="Email" -->
+                    <a-form-item
+                      :name="['user', 'email']"
+                      :rules="[{ type: 'email' }]"
+                    >
                       <a-input
-                        v-model:value="formState.user"
-                        placeholder="Username"
+                        v-model:value="formState.user.email"
+                        placeholder="Email"
+                        autocomplete="false"
                         class="h-12 text-lg"
                       >
-                        <template #prefix
-                          ><UserOutlined style="color: rgba(0, 0, 0, 0.25)"
-                        /></template>
+                        <template #prefix>
+                          <UserOutlined style="color: rgba(0, 0, 0, 0.25)" />
+                        </template>
                       </a-input>
                     </a-form-item>
                     <a-form-item>
                       <a-input
-                        v-model:value="formState.password"
+                        v-model:value="formState.user.password"
                         type="password"
                         placeholder="Password"
                         class="h-12 text-lg"
                       >
-                        <template #prefix
-                          ><LockOutlined style="color: rgba(0, 0, 0, 0.25)"
-                        /></template>
+                        <template #prefix>
+                          <LockOutlined style="color: rgba(0, 0, 0, 0.25)" />
+                        </template>
                       </a-input>
                     </a-form-item>
-
                     <div class="flex mx-auto">
                       <a-form-item>
                         <a-form-item name="remember" no-style>
-                          <a-checkbox v-model:checked="formState.remember"
+                          <a-checkbox v-model:checked="formState.user.remember"
                             >Remember me</a-checkbox
                           >
-                          <a-divider
-                            type="vertical"
-                            style="height: 1rem; background-color: #2e2e2e"
-                            class="opacity-20 m-0"
-                          />
                         </a-form-item>
                         <NuxtLink class="login-form-forgot ml-2" to=""
                           >Forgot password</NuxtLink
                         >
                       </a-form-item>
                     </div>
-
                     <a-form-item>
                       <a-button
                         type="primary"
                         html-type="submit"
                         :disabled="
-                          formState.user === '' || formState.password === ''
+                          formState.user.email === '' ||
+                          formState.user.password === ''
                         "
                         class="bg-blue-600 w-full h-12 font-bold text-lg"
                       >
@@ -139,7 +169,6 @@ const handleFinishFailed: FormProps["onFinishFailed"] = (errors) => {
                   สมัครเลย
                 </button>
               </div>
-              <!-- <p class="text-xl font-semibold text-center">สมัครเลย!</p> -->
             </div>
           </div>
         </div>
