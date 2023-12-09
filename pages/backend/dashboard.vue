@@ -1,7 +1,7 @@
 <script setup lang="ts">
-// definePageMeta({
-//   middleware: ["auth"],
-// });
+definePageMeta({
+  middleware: ["auth"],
+});
 const user = useStrapiUser();
 const userCookie = JSON.stringify(user.value?.email);
 </script>

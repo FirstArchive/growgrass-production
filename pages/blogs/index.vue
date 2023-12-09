@@ -4,8 +4,8 @@ import { posts } from "~/data/posts";
 const current = ref(2);
 
 const route = useRoute();
-const { findOne, find } = useStrapi();
-const response = await find("blogs?populate=*");
+// const { findOne, find } = useStrapi();
+// const response = await find("blogs?populate=*");
 // const responseOne = await findOne("blogs", "6");
 // response.data.forEach((item) => {
 //   const title = item.attributes.thumbnail.data.attributes.formats.thumbnail.url; // ทำอะไรกับ title ต่อไป
